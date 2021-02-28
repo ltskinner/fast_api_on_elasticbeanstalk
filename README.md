@@ -37,18 +37,24 @@ web: uvicorn application:app --host=0.0.0.0 --ws websockets
 
 ## Deployment
 
-Must zip the following files into a directory `deployment_package.zip` - contents must be:
+Zip the above files into a zipfile `deployment_package.zip` - contents must be:
 
 ![alt text](./docs/zip_contents.png)
+
+(Note - name of the zipfile doesnt matter)
+
+### Steps
 
 * 1. [ ] Upload package to AWS EB environment
 * 2. [ ] Configure software section for the WSGIPath to be `application` (of application.py)
 
-### First, navigate to the software config section
+### Configuring EB to run
+
+#### 1 - navigate to the Software Config section
 
 ![alt text](./docs/config_software.png)
 
-### Next, set the WSGIPath
+#### 2 - Set the WSGIPath
 
 ![alt text](./docs/wsgi_path.png)
 

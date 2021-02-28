@@ -1,0 +1,6 @@
+# test script with live url
+test_api_call.py
+
+# Compiled python modules
+*__pycache__*
+*.pyc

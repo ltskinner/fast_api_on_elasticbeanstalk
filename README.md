@@ -37,9 +37,9 @@ web: uvicorn application:app --host=0.0.0.0 --ws websockets
 
 ## Deployment
 
-Must zip the following files into a directory
+Must zip the following files into a directory `deployment_package.zip` - contents must be:
 
-**Note** these must be at the top level of the zipped file
+![alt text](./docs/zip_contents.png)
 
 * 1. [ ] Upload package to AWS EB environment
 * 2. [ ] Configure software section for the WSGIPath to be `application` (of application.py)
